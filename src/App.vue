@@ -3,11 +3,13 @@
     <router-view/>
   </div>
 </template>
+<script>
+import './styles/global.css'
 
-<style>
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+export default {
+  name: 'App',
+  components: {
+
+  }
 }
-</style>
+</script>

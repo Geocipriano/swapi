@@ -1,8 +1,10 @@
 <template>
-  <div class="navbar">
-      <div class="logo"><img src="../assets/logo.png" alt="logo"></div>
-      <div class="right"></div>
-  </div>
+    <header>
+        <nav>
+            <a href="/"><img src="../assets/logo.png" alt="logo" id="logo"></a>
+            <img src="../assets/menu.png" alt="menu-button" id="menu-button">
+        </nav>
+    </header>
 </template>
 
 <script>
@@ -11,13 +13,22 @@ export default {
 }
 </script>
 
-<style>
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
-.logo img {
+<style scoped>
+header {
+    background-color: var(--color-black);
+    height: 60px;
     width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#logo {
+    width: 70px;
+}
+#menu-button {
+    width: 40px;
+    color: white;
 }
 </style>
