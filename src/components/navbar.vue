@@ -1,8 +1,9 @@
 <template>
     <header>
         <nav>
-            <a href="/"><img src="../assets/logo.png" alt="logo" id="logo"></a>
-            <img src="../assets/menu.png" alt="menu-button" id="menu-button">
+            <a href="/" class="container"><img src="../assets/logo.png" alt="logo" id="logo"></a>
+            <img src="../assets/menu.png" alt="menu-button" id="menu-button" class="container">
+            <div id="menu-overlay"></div>
         </nav>
     </header>
 </template>
@@ -22,13 +23,19 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 #logo {
     width: 70px;
 }
 #menu-button {
-    width: 40px;
+    width: 70px;
     color: white;
 }
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 </style>

@@ -25,3 +25,6 @@ a {
 a:hover {
     opacity: 0.8;
 }
+.container {
+    padding: 0 15px 0 15px;
+}
