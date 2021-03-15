@@ -28,3 +28,7 @@ a:hover {
 .container {
     padding: 0 15px 0 15px;
 }
+
+li {
+    list-style: none;
+}
